@@ -178,7 +178,14 @@ body::after {
     width: 498px;
     height: 498px;
     left: calc(50% - 498px / 2);
-    top: calc(50% - 498px / 2 + 65px);
+    top: 190px;
+  }
+
+  @media (min-width: $laptop-min-width) {
+    width: 690px;
+    height: 690px;
+    left: calc(50% - 690px / 2);
+    top: 180px;
   }
 }
 

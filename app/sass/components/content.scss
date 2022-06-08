@@ -56,7 +56,6 @@
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: 0.25em;
     padding-left: 0.22em;
   }
 
@@ -93,6 +92,21 @@
       width: 140px;
       top: 6px;
       left: 6px;
+    }
+  }
+
+  @media (min-width: $tablet-min-width) {
+    .page-main {
+      padding-top: 285px;
+    }
+
+    .page-main__title {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    .page-main__tagline {
+      padding-top: 64px;
     }
   }
 }
