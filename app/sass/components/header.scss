@@ -1,18 +1,62 @@
-.page-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    width: 100%;
-    height: 71px;
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: 71px;
+
+  button {
+    width: 116px;
+    height: 42px;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding-left: 0px;
+    padding-right: 3px;
+  }
+  button::after {
+    width: 116px;
+    height: 42px;
+    top: 6px;
+    left: 6px;
+  }
 }
 .page-header__auth {
-    display: none;
+  display: none;
+  align-items: center;
+  padding-right: 7px;
+  padding-bottom: 5px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.page-header__login {
+  font-family: 'Fira Sans Medium';
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: $color-dark;
+  padding-right: 52px;
 }
 
 .page-header__logo {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .page-header__user {
-    padding-bottom: 11px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-header {
+    height: 97px;
+  }
+  .page-header__user {
+    display: none;
+  }
+
+  .page-header__auth {
+    display: flex;
+  }
 }

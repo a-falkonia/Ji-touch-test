@@ -156,14 +156,14 @@ body {
 
 body::after {
   /* Ellipse 1 */
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   left: 10px;
-  left: calc(50% - 300px/2);
+  left: calc(50% - 300px / 2);
   top: calc(50% - 300px / 2);
 
   /* Light */
@@ -176,37 +176,43 @@ body::after {
 }
 
 button {
-    cursor: pointer;
-    position: relative;
-    border: 1px solid $color-dark;
-    background: none;
-    border-left: 0;
-    padding: 0;
-    width: 128px;
-    height: 45px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid $color-dark;
+  background: none;
+  padding: 0;
+  width: 128px;
+  height: 45px;
 
-    font-family: 'Fira Sans Medium';
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.05em;
-    padding-left: 8px;
-    color: $color-light;
+  font-family: 'Fira Sans Medium';
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  padding-left: 8px;
+  color: $color-light;
 }
 
 button::after {
-    content: "";
-    display: block;
-    width: 128px;
-    height: 45px;
-    background: $color-primary;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    z-index: -1;
+  content: '';
+  display: block;
+  width: 128px;
+  height: 45px;
+  background: $color-primary;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
 }
-button:hover{
+button:hover {
   background-color: $color-active;
 }
 button:hover:after {
   display: none;
 }
+
+@media (min-width: $tablet-min-width) {
+    .container {
+      padding: 0px 20px;
+    }
+    
+  }
