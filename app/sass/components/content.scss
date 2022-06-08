@@ -1,0 +1,79 @@
+.page-main {
+  padding-top: 89px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.page-main__title {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 0.25em;
+}
+
+.page-main__tagline {
+  font-family: 'Fira Sans Medium';
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.11em;
+  padding-left: 0.163em;
+  padding-top: 39px;
+}
+
+.email-form {
+  padding-top: 36px;
+  display: flex;
+  align-items: center;
+
+  input {
+    outline: none;
+    border: 1px solid $color-dark;
+    width: 168px;
+    height: 45px;
+  }
+  input::placeholder {
+    color: $color-semi;
+    font-family: 'Fira Sans Regular';
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 14.4px;
+    padding-left: 7px;
+  }
+}
+
+button {
+    position: relative;
+    border: 1px solid $color-dark;
+    background: none;
+    border-left: 0;
+    padding: 0;
+    width: 128px;
+    height: 45px;
+
+    font-family: 'Fira Sans Medium';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    padding-left: 8px;
+    color: $color-light;
+}
+
+button::after {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 45px;
+    background: $color-primary;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+}
+
+
