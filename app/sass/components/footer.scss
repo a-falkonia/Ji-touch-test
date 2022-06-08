@@ -1,7 +1,8 @@
 .page-footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: 32px;
-  padding: 0px 86px;
-  margin-bottom: 70px;
+  width: 149px;
+  margin-bottom: 68px;
 }
