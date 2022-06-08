@@ -49,4 +49,50 @@
   }
 }
 
+@media (min-width: $tablet-min-width) {
+  .page-main {
+    padding-top: 206px;
+  }
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.25em;
+    padding-left: 0.22em;
+  }
 
+  .page-main__tagline {
+    padding-top: 47px;
+    padding-right: 15px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .email-form {
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 6px;
+    input {
+      padding-top: 5px;
+      width: 266px;
+    }
+    input::placeholder {
+      font-size: 12px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+
+      padding-left: 9px;
+    }
+
+    button {
+      width: 140px;
+      padding-left: 0px;
+    }
+    button::after {
+      width: 140px;
+      top: 6px;
+      left: 6px;
+    }
+  }
+}
