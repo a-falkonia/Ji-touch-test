@@ -181,7 +181,6 @@ body::after {
     height: 498px;
     left: calc(50% - 498px / 2);
     top: min(190px, calc(50% - 498px / 2 + 66px));
-    background: pink;
   }
 
   @media (min-width: $laptop-min-width) {

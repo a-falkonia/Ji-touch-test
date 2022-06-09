@@ -37,6 +37,7 @@
     outline: none;
     border: 1px solid $color-dark;
     border-right: none;
+    padding-left: 9px;
     width: 167px;
     height: 45px;
   }
@@ -46,7 +47,6 @@
     font-size: 12px;
     letter-spacing: 0.05em;
     line-height: 14.4px;
-    padding-left: 7px;
   }
 
   button {
@@ -79,6 +79,7 @@
     input {
       padding-top: 5px;
       width: 266px;
+      padding-left: 10px;
     }
     input::placeholder {
       font-size: 12px;
@@ -86,8 +87,7 @@
       font-size: 16px;
       line-height: 19px;
       letter-spacing: 0.05em;
-
-      padding-left: calc(8px + 0.05em);
+      padding-left: 0.05em;
     }
 
     button {
@@ -120,6 +120,12 @@
 
     .email-form {
       padding-left: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    .email-form {
+      padding-left: 54px;
     }
   }
 }
