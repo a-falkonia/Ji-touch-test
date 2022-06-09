@@ -69,3 +69,10 @@
     display: flex;
   }
 }
+
+@media (min-width: $laptop-min-width) {
+  .page-header {
+    height: 98px;
+    min-height: 98px;
+  }
+}

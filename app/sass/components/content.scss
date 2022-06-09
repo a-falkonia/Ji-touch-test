@@ -27,6 +27,7 @@
 
 .email-form {
   padding-top: 36px;
+  padding-left: 4px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -103,16 +104,22 @@
 
   @media (min-width: $laptop-min-width) {
     .page-main {
-      padding-top: 285px;
+      padding-top: 283px;
     }
 
     .page-main__title {
       font-size: 80px;
       line-height: 80px;
+      padding-left: calc(0.22em + 1px);
     }
 
     .page-main__tagline {
       padding-top: 64px;
+      
+    }
+
+    .email-form {
+      padding-left: 14px;
     }
   }
 }
