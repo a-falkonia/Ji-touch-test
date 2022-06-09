@@ -136,6 +136,7 @@ table {
 html,
 body {
   height: 100%;
+  max-height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -148,6 +149,7 @@ body {
   align-items: center;
   min-width: 320px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .container {
@@ -164,7 +166,7 @@ body::after {
   border-radius: 50%;
   left: 10px;
   left: calc(50% - 300px / 2);
-  top: calc(50% - 300px / 2);
+  top: 139px;
 
   /* Light */
 
@@ -178,14 +180,22 @@ body::after {
     width: 498px;
     height: 498px;
     left: calc(50% - 498px / 2);
-    top: 190px;
+    top: min(190px, calc(50% - 498px / 2 + 66px));
+    background: pink;
   }
 
   @media (min-width: $laptop-min-width) {
     width: 690px;
     height: 690px;
     left: calc(50% - 690px / 2);
-    top: 180px;
+    top: min(180px, calc(50% - 498px / 2));
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 690px;
+    height: 690px;
+    left: calc(50% - 690px / 2);
+    top: min(190px, calc(50% - 690px / 2 + 75px));
   }
 }
 
@@ -194,15 +204,10 @@ button {
   position: relative;
   border: 1px solid $color-dark;
   background: none;
-  padding: 0;
   width: 128px;
   height: 45px;
-
+  padding: 0;
   font-family: 'Fira Sans Medium';
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  padding-left: 8px;
   color: $color-light;
 }
 
@@ -229,3 +234,9 @@ button:hover:after {
     padding: 0px 20px;
   }
 }
+
+ @media (min-width: $desktop-min-width) {
+   .container {
+    padding: 0px 60px;
+  }
+ }

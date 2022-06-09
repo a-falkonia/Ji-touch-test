@@ -1,5 +1,5 @@
 .page-main {
-  padding-top: 89px;
+  padding-top: 88px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,15 +19,15 @@
 .page-main__tagline {
   font-family: 'Fira Sans Medium';
   font-size: 19px;
-  font-weight: 500;
   line-height: 23px;
   letter-spacing: 0.11em;
-  padding-left: 0.163em;
+  padding-right: 0.11em;
   padding-top: 39px;
 }
 
 .email-form {
   padding-top: 36px;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -35,23 +35,28 @@
     outline: none;
     border: 1px solid $color-dark;
     border-right: none;
-    width: 168px;
+    width: 167px;
     height: 45px;
   }
   input::placeholder {
     color: $color-semi;
     font-family: 'Fira Sans Regular';
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 0.05em;
     line-height: 14.4px;
     padding-left: 7px;
+  }
+
+  button {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    padding-left: 8px;
   }
 }
 
 @media (min-width: $tablet-min-width) {
   .page-main {
-    padding-top: 206px;
+    padding-top: 208px;
   }
   .page-main__title {
     font-size: 60px;
@@ -60,14 +65,14 @@
   }
 
   .page-main__tagline {
-    padding-top: 47px;
+    padding-top: 44px;
     padding-right: 15px;
     font-size: 26px;
     line-height: 31px;
   }
 
   .email-form {
-    padding-top: 25px;
+    padding-top: 26px;
     padding-left: 0px;
     padding-right: 6px;
     input {
@@ -81,12 +86,13 @@
       line-height: 19px;
       letter-spacing: 0.05em;
 
-      padding-left: 9px;
+      padding-left: calc(8px + 0.05em);
     }
 
     button {
       width: 140px;
       padding-left: 0px;
+      padding-right: 2px;
     }
     button::after {
       width: 140px;
@@ -95,7 +101,7 @@
     }
   }
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $laptop-min-width) {
     .page-main {
       padding-top: 285px;
     }
